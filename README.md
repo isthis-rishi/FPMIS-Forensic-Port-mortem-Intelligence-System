@@ -82,7 +82,7 @@ intended to address:
 
 FPMIS addresses these challenges through digital case records, matching
 support, evidence tracking, and cross-case analysis. The impact figures
-shown in the presentation are project targets/expected impact, not
+shown in the project documentation are project targets/expected impact, not
 independently verified production results.
 
 ## Key Features
@@ -93,7 +93,7 @@ FPMIS is presented as eight connected modules.
 
 Provides a central place to create and track forensic cases.
 
--   Unique case-number format shown in the presentation:
+-   Unique case-number format shown in the project documentation:
     `FPMIS/YYYY/XXXXX`
 -   Support for multiple case types
 -   High, medium, and low priority levels
@@ -147,10 +147,10 @@ Records decomposition observations across seven stages:
 6.  Dry remains
 7.  Skeletonization
 
-The presentation also identifies contextual observations such as
+Contextual observations include
 temperature, humidity, weather, indoor/outdoor location, sun exposure,
 insect activity, maggot stage, bloating level, and other body changes.
-Stage durations shown in the presentation are indicative ranges, not
+Stage durations shown in the project documentation are indicative ranges, not
 universal rules.
 
 ### 5. Evidence Management and Chain of Custody
@@ -158,7 +158,7 @@ universal rules.
 Organizes evidence records and supports tracking of evidence handling
 through the investigation.
 
-Example evidence categories listed in the presentation include:
+Example evidence categories listed in the project documentation include:
 
 -   Biological samples and DNA samples
 -   Clothing and personal belongings
@@ -178,7 +178,7 @@ system controls must meet applicable requirements.
 Supports comparison between unidentified-body records and missing-person
 reports using a weighted score.
 
-The criteria and weights shown in the presentation are:
+The matching criteria and weights are:
 
   Matching criterion               Weight
   ---------------------- ----------------
@@ -191,7 +191,7 @@ The criteria and weights shown in the presentation are:
   Other features                10 points
   **Total**                **100 points**
 
-The presentation defines these score bands:
+The score bands are:
 
   Score band   Label in presentation
   ------------ -----------------------
@@ -228,7 +228,7 @@ materials.
 
 ## How the Workflow Fits Together
 
-The demonstration flow described in the presentation is:
+A typical workflow is:
 
 1.  Create a new forensic case.
 2.  Add the autopsy report and injury information.
@@ -243,7 +243,7 @@ observations can support a more organized investigation workflow.
 
 ## Technical Architecture
 
-The project presentation describes a layered architecture:
+FPMIS follows a layered architecture:
 
 ``` text
 ┌────────────────────────────────────────────┐
@@ -303,7 +303,7 @@ source code.
 
 ## Project Structure
 
-The supplied README describes the following repository layout:
+The repository is organized as follows:
 
 ``` text
 FPMIS/
@@ -473,7 +473,7 @@ npm install
 npm run dev
 ```
 
-The supplied README specifies `npm run dev` for local development. The
+Use `npm run dev` for local development, provided the frontend's `package.json` contains that script. The
 frontend's `package.json` must contain that script. If it does not,
 inspect the scripts available in that file rather than assuming a
 different command.
@@ -655,15 +655,13 @@ current project status before describing any roadmap item as delivered.
 
 ## Team
 
-**Digital Care Crew**
-
-  Team member      Role shown in the presentation
-  ---------------- --------------------------------
-  Gurinder Singh   Team Lead
-  Santanu Pandit   Full Stack Developer
-  Jatin Gulleria   Backend Developer
-  Rishi Kumar      Frontend Developer
-  Vishal Mishra    UI/UX Designer
+| Name | Role |
+|---|---|
+| [Gurinder Singh](https://fpmis.gurindersingh.dev) | Team Lead |
+| [Rishi Kumar](https://github.com/isthis-rishi) | Full Stack Developer |
+| [Shantanu Pandit](https://github.com/ShantanuInnovates) | Backend Developer |
+| [Jatin Guleria](https://github.com/JatinCodes020304) | Frontend Developer |
+| [Vishal Mishra](https://fpmis.gurindersingh.dev) | UI/UX Designer |
 
 ## Limitations and Disclaimer
 
